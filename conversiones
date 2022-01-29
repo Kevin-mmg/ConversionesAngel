@@ -1,0 +1,18 @@
+opcion = int (input ("***  MENÚ  ***\n \n1. Km/h en m/s \n2. m/s en km/h \n3. Hrs en min \n\nIngrese la opción que desea: "))
+if opcion == 1:
+    print ("___________________________")
+    kmh=int (input ("Ingrese los km/h: "))
+    r = (kmh * 1000*1)/(1*1*3600)
+    print ("\n",kmh,"km/h * 1000 m/1 km * 1 h/3600 s = ",r, "m/s")
+elif opcion == 2:
+    print ("___________________________")
+    ms=int (input ("Ingrese los m/s: "))
+    r = (ms*1*3600)/(1*1000*1)
+    print ("\n",ms,"m/s * 1 km/1000 m * 3600 s/1 h = ",r, "km/h")
+elif opcion == 3:
+    print ("___________________________")
+    h=int (input ("Ingrese las horas: "))
+    r = h*60
+    print ("\n",h,"horas =", r, "minutos")
+else:
+  print ("Opcion invalida")
